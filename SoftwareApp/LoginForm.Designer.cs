@@ -45,7 +45,6 @@ namespace SoftwareApp
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(114, 21);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -53,7 +52,6 @@ namespace SoftwareApp
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(114, 21);
             this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
@@ -112,7 +110,6 @@ namespace SoftwareApp
             this.label3.Size = new System.Drawing.Size(9, 12);
             this.label3.TabIndex = 7;
             this.label3.Text = " ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // LoginForm
             // 
@@ -129,7 +126,6 @@ namespace SoftwareApp
             this.Controls.Add(this.textBox1);
             this.Name = "LoginForm";
             this.Text = "SWApp";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
