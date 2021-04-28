@@ -77,11 +77,42 @@ namespace SoftwareApp
                 item.userpasswd = textBox2.Text;*/
 
                 // 항목의 개수로 로그인 가능 여부 확인
-                var item = ctx.login.Where(a => a.userid == tb_userid && a.userpasswd == tb_userpw);
+                /*var item = ctx.login.Where(a => a.userid == tb_userid && a.userpasswd == tb_userpw);
                 Console.WriteLine("항목의 개수 : " + item.Count());
-                flag = item.Count();
+                flag = item.Count();*/
 
+                var fransOrders = from ord in ctx.login //ord는 ctx.login 테이블에서 가져온 이름 
+                                  where ord.userid == tb_userid
+                                  select ord;
+                var encrypt = "";
+                foreach(var o in fransOrders)
+                {
+                    Console.WriteLine(o.userid + "\t" + o.userpasswd);
+                    encrypt = o.userpasswd;
+                }
+
+                
                 ctx.SaveChanges();
+
+                var key = Properties.Resources.DecKey;
+                var des = new DES(key);
+                //복호화
+                var decrypt = des.result(DesType.Decrypt, encrypt);
+                Console.WriteLine(decrypt);
+
+                //복호화한 값에서 널문자 제거
+                string temp = decrypt.Replace('\0', ' ');
+                temp = temp.Trim();
+
+                if (temp == tb_userpw)
+                {
+                    flag = 1;
+                }
+                else
+                {
+                    flag = 0;
+                }
+
             }
 
             if (flag == 0)
@@ -108,10 +139,15 @@ namespace SoftwareApp
                 var upw = textBox2.Text;
 
                 // 암호화
-                var key = "test1234";//레코드 단위로 묶어주기
+                //var key = "test1234";
+                var key = Properties.Resources.DecKey;
+                var des = new DES(key);
+                var encrypt = des.result(DesType.Encrypt, upw);
+
+                //레코드 단위로 묶어주기
                 var item = new tb_logininfo(); //generic type, 연동
                 item.userid = uid;
-                item.userpasswd = upw;
+                item.userpasswd = encrypt;
 
                 ctx.login.Add(item);
                 ctx.SaveChanges();
@@ -129,9 +165,7 @@ namespace SoftwareApp
                 context.SaveChanges();*//*
                 item.userid = "id1234";
                 item.userpasswd = "pw123";
-
                 Console.WriteLine("레코드 정보 생성 완료");
-
                 context.login.Add(item);
                 Console.WriteLine("레코드 추가");
                 context.SaveChanges();

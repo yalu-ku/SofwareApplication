@@ -14,3 +14,4 @@ C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.csproj.CopyCompl
 C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.exe
 C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.pdb
 C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.LoginForm.resources
+C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.MainForm.resources
