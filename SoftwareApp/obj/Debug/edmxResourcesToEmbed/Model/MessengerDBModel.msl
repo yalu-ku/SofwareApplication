@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="msgDBModelStoreContainer" CdmEntityContainer="msgDBEntities">
+    <EntitySetMapping Name="tb_logininfo">
+      <EntityTypeMapping TypeName="msgDBModel.tb_logininfo">
+        <MappingFragment StoreEntitySet="tb_logininfo">
+          <ScalarProperty Name="dataid" ColumnName="dataid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="userpasswd" ColumnName="userpasswd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

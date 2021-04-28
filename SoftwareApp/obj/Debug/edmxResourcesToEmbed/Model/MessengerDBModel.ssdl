@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="msgDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tb_logininfo">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="dataid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userid" Type="nchar" MaxLength="12" Nullable="false" />
+    <Property Name="userpasswd" Type="nchar" MaxLength="16" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="msgDBModelStoreContainer">
+    <EntitySet Name="tb_logininfo" EntityType="Self.tb_logininfo" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

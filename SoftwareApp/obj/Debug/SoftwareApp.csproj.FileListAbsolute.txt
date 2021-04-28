@@ -1,0 +1,16 @@
+C:\Temp\workspace\SoftwareApp\SoftwareApp\bin\Debug\SoftwareApp.exe.config
+C:\Temp\workspace\SoftwareApp\SoftwareApp\bin\Debug\SoftwareApp.exe
+C:\Temp\workspace\SoftwareApp\SoftwareApp\bin\Debug\SoftwareApp.pdb
+C:\Temp\workspace\SoftwareApp\SoftwareApp\bin\Debug\EntityFramework.dll
+C:\Temp\workspace\SoftwareApp\SoftwareApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Temp\workspace\SoftwareApp\SoftwareApp\bin\Debug\EntityFramework.xml
+C:\Temp\workspace\SoftwareApp\SoftwareApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Temp\workspace\SoftwareApp\SoftwareApp\bin\Debug\ko\EntityFramework.resources.dll
+C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.csprojAssemblyReference.cache
+C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.Properties.Resources.resources
+C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.csproj.GenerateResource.cache
+C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.csproj.CoreCompileInputs.cache
+C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.csproj.CopyComplete
+C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.exe
+C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.pdb
+C:\Temp\workspace\SoftwareApp\SoftwareApp\obj\Debug\SoftwareApp.LoginForm.resources
